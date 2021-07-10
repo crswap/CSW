@@ -1,0 +1,3047 @@
+{
+  "contractName": "IEvolution",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "bonus",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.0+commit.c7dfd78e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"bonus\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/contracts/Proxy.sol\":\"IEvolution\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/contracts/GenNFT.sol\":{\"keccak256\":\"0xe74a7771cda36fe71e5c876142efeea00a5aea5ad322f0b77bb54ee48b515d84\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://efd1964ebc7d21534df99a802cec9974ae6071f9172cb4b6d5c72458b288bf3a\",\"dweb:/ipfs/QmX5wGQVHTLxxU2Xdk27ZuMpFujbws2qaadUecTR9qd26M\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/contracts/GenToken.sol\":{\"keccak256\":\"0x6b93be1862fcbe6e5a383153ed2772d72c0024f52b2c3afd59489f3236b8fb41\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cae79777848ce6c7089608cf684412e7263e7e0b6c728cacda1683cc82fe0b31\",\"dweb:/ipfs/QmW2obJNL8JaG35h3EKypAUWGsEeBQupXWJDdfBu1AZLHg\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/contracts/OwnableToken.sol\":{\"keccak256\":\"0xfd714aa5a209ab76ee7d3bf90a3a4ba9217e2a76df7b431323a4b1891901932c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ab52d7c90cffb9a9e3bc2d1e91304c85e2ea1a9993426da723ebe0d33cda2c14\",\"dweb:/ipfs/QmfTg8VeonbKgubcZu1pnynvRBBsEdoAaiky4avMpY6Tp2\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/contracts/Proxy.sol\":{\"keccak256\":\"0x8d0f0e32f7fab285f5beb49716b2bee06fa858a57241a03ce24c260f10e8f8b6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f762f263589870869ff621cd952f3f1574c2036c50a1aa70b1bdeb93a5cba663\",\"dweb:/ipfs/QmVMb42HgtME9nmfjdLAw3ZvkkXsiPEAHZGZ94aPXDzfF7\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/access/Ownable.sol\":{\"keccak256\":\"0x1cae4f85f114ff17b90414f5da67365b1d00337abb5bce9bf944eb78a2c0673c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d5ff16b336ce8f906478d5f2eecc6435e00833bdc0b92f6b209cf9e92cb5b2b7\",\"dweb:/ipfs/QmRD1rAZEqQ73C33cdA3QoUyBDMEWnNKNMc6PNkAZWHeQQ\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC20/ERC20.sol\":{\"keccak256\":\"0x21d8a5dd396bee41e4a039d150af08b66b6d09eef416daf8e5edf13ef219084e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://682f1e9c20780070df3c8b52bf3b48d2aa6debcdff5a924e212d78bbaedb945f\",\"dweb:/ipfs/QmXGhsAPeemtVQ8ip5CsParvX3sgpMm4Lq8EccS3YaTtwA\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC20/IERC20.sol\":{\"keccak256\":\"0xf8e8d118a7a8b2e134181f7da655f6266aa3a0f9134b2605747139fcb0c5d835\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9ec48567e7ad06acb670980d5cdf3fd7f3949bf12894f02d68c3bb43e75aa84f\",\"dweb:/ipfs/QmaG3R2J9cz92YT77vFjYrjMNU2wHp4ypwYD62HqDUqS5U\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC20/utils/SafeERC20.sol\":{\"keccak256\":\"0x964c4f1313db157aee9a5d71350cbbf5d9ed969070480e99fd750c2b641f43d2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0c87a7f19ea7863f29768ad86b3962d7f188d68d2dde228a2ffa553008dee589\",\"dweb:/ipfs/QmXTj4AJAwQBe1SQXmtnuA3e1Ed91ANSMp9B89rKbuENUK\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC721/ERC721.sol\":{\"keccak256\":\"0xf94543a2c0426f4579e2414be5087a34454de9dea24517bac2278f8edd16f8cd\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://459f5cc541238e27d09911bbda1d39c6f87d2bef63caa3ae9431f98f53926376\",\"dweb:/ipfs/QmePektGzfqYfXMUSjWir2hkaNoxhEFkaDPgHEhbe2uacw\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC721/IERC721.sol\":{\"keccak256\":\"0xc1c941ad1e580b4623007305921efe2f26fc7320a4edc226234dd707c658a428\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://473e11d739868e0d9f48254ccf84ba63290d6a2321d59a37b74c244a27f9cad7\",\"dweb:/ipfs/QmUGzDmecP936jzgM7SYyGwR1YgBGsveoHHJTbDfB8jbGF\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0x96877bb2eb8ca360e949ee1bd77b47a14e92e42f79897c350f088f87a3c231d4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://48593d699a4ef6b5bd2efb20d37320e69303fd27d4b59a2b6b8a8e563e608456\",\"dweb:/ipfs/QmdAPS8uLrzPJEeFZyJVkwTtaL3KB9jo9wJm1UcoJP55wT\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC721/extensions/ERC721Enumerable.sol\":{\"keccak256\":\"0x3dce5847e70c056ef0f7cf91cb9a0067cf90784794017a45c1211cde7ed1c08c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ba34b5028b6a297467a7364d9af182649dee0611a0f9620ec27ce10647885cad\",\"dweb:/ipfs/QmWhGtHDcAYWA31f3Ze9izeh3SPMRzcFagTUwxExLg3sRc\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC721/extensions/IERC721Enumerable.sol\":{\"keccak256\":\"0xccb7e6475afcb1c5cb13b3fbf1329c10b93620a9b66393388066683915271a78\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://df5776161e3226ac31bfb919dfe5f42e173a08293fadb4ffa90ffb55e76869d7\",\"dweb:/ipfs/QmXtKfvWj1v6oha8urbnw4RmjSpmQjZsGGqK5qk5trK4nH\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC721/extensions/IERC721Metadata.sol\":{\"keccak256\":\"0xb8d11e77eb1ed34a33720edb551d7d6a6b0eee2bfaa40a7024020e1fdf879b16\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c583283c838cc624a96a69eaa823fa92ac5294ec88d417e266c09ea091e0ae62\",\"dweb:/ipfs/QmNdzitXaFADaxooWpB4WsckkDyr4j6GQRxBjyKXsvEeXv\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC721/utils/ERC721Holder.sol\":{\"keccak256\":\"0xd260defa45bc1bbdf5e6d74298fb2705bf058c3d2beb17fb1158fa1a430c5024\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5ada67d8251f88b8c3df5a79d9d4930fd7061634fb110478c407b4d9abc3e120\",\"dweb:/ipfs/QmeEdLBhUuF7C2ZtzTWjSCAbcemFtma8Gh91pFY3djaTz3\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/utils/Address.sol\":{\"keccak256\":\"0x069b2631bb5b5193a58ccf7a06266c7361bd2c20095667af4402817605627f45\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6a4c96fafff76deda5697c3c5c98cade6e6e1b178254544c106bf360c079ce4e\",\"dweb:/ipfs/QmXmxubE3jnatFgZuN8ay1VV6hZ8WRmhvUjNpeVjki15HX\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/utils/Context.sol\":{\"keccak256\":\"0xf930d2df426bfcfc1f7415be724f04081c96f4fb9ec8d0e3a521c07692dface0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fc2bfdea0d2562c76fb3c4cf70a86c6ba25c5a30e8f8515c95aafdf8383f8395\",\"dweb:/ipfs/QmTbFya18786ckJfLYUoWau9jBTKfmWnWm5XSViWvB7PXN\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/utils/Strings.sol\":{\"keccak256\":\"0x456e9b3a2bfe189b5249857f624f4139e59331db518483b456c4e587a20552e0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1123c9545decc48a011370ebab4bf53dda98524fa21f9498e68851ba8f0ffc0f\",\"dweb:/ipfs/QmUpgMg8EFDnv87ePKUjXxXpJT3qwHRj9VDNSnRxu7T9sy\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/utils/introspection/ERC165.sol\":{\"keccak256\":\"0x5718c5df9bd67ac68a796961df938821bb5dc0cd4c6118d77e9145afb187409b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d10e1d9b26042424789246603906ad06143bf9a928f4e99de8b5e3bdc662f549\",\"dweb:/ipfs/Qmejonoaj5MLekPus229rJQHcC6E9dz2xorjHJR84fMfmn\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/utils/introspection/IERC165.sol\":{\"keccak256\":\"0xa28007762d9da9db878dd421960c8cb9a10471f47ab5c1b3309bfe48e9e79ff4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://796ab6e88af7bf0e78def0f059310c903af6a312b565344e0ff524a0f26e81c6\",\"dweb:/ipfs/QmcsVgLgzWdor3UnAztUkXKNGcysm1MPneWksF72AvnwBx\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/utils/math/SafeMath.sol\":{\"keccak256\":\"0x2526b7c6a366fc211bbc176078ab02b83833e7682abcc5b3bed9d700b34e2a3e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5f9529d3d365e8415155cee11394e0f7c0de2152b601b7e77508fce16cb4a509\",\"dweb:/ipfs/QmVhbcLVsAzvqfjsdLwy25XMjgVJm7Z3w2JCNiNbZF2GHT\"]},\"/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/utils/structs/EnumerableSet.sol\":{\"keccak256\":\"0x71e0d1cc75b67306382e055b789b6d3ffe34a9e2e55380d3c9895a36a42229e1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ea28aa69470f0f5bb38095c59d2d68db03fc52faa5640de4486a188ecc168870\",\"dweb:/ipfs/QmdwRX791f2gdkxLfzQLcyx3ZLvSjGd2wdX8gXFi8sH2uW\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.8.0;\n\nimport \"../oz/utils/structs/EnumerableSet.sol\";\nimport \"../oz/access/Ownable.sol\";\nimport \"../oz/token/ERC20/ERC20.sol\";\nimport \"../oz/token/ERC20/IERC20.sol\";\nimport \"../oz/token/ERC20/utils/SafeERC20.sol\";\nimport \"../oz/token/ERC721/utils/ERC721Holder.sol\";\nimport '../oz/token/ERC721/IERC721.sol';\nimport \"../oz/utils/math/SafeMath.sol\";\nimport \"./GenToken.sol\";\nimport \"./GenNFT.sol\";\n\ninterface IEvolution {\n    function bonus(address user) external view returns (uint);\n}\n\ncontract Proxy is Ownable, ERC721Holder {\n    using SafeERC20 for IERC20;\n    using SafeMath for uint;\n    \n    \n    GenNFT public nft;\n    IEvolution public evo;\n    uint public bonusPerBurnedNFT = 50;\n    \n    constructor(\n        GenNFT _nft,\n        IEvolution _evo\n    ) public {\n        nft = _nft;\n        evo = _evo;\n    }\n    \n    function bonus(address user) public view returns (uint) {\n        return evo.bonus(user);\n    }\n    \n    function getNFTPowerBonusBlocks(uint nftId) external view returns (uint) {\n        return nft.getTypeByTokenId(nftId).bonus % 1000000; //first 6 digits\n    }\n    \n    function getNFTPowerBonus() external view returns (uint) {\n        return bonusPerBurnedNFT;\n    }\n    \n    function updateNFT(GenNFT _nft) public onlyOwner {\n        nft = _nft;\n    }\n    \n    function updateEvo(IEvolution _evo) public onlyOwner {\n        evo = _evo;\n    }\n    \n    function updateBonus(uint _bonusPerBurnedNFT) public onlyOwner {\n        bonusPerBurnedNFT = _bonusPerBurnedNFT;\n    }\n}",
+  "sourcePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/contracts/Proxy.sol",
+  "ast": {
+    "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/contracts/Proxy.sol",
+    "exportedSymbols": {
+      "Address": [
+        6274
+      ],
+      "Context": [
+        6297
+      ],
+      "ERC165": [
+        6524
+      ],
+      "ERC20": [
+        4299
+      ],
+      "ERC721": [
+        5421
+      ],
+      "ERC721Enumerable": [
+        5893
+      ],
+      "ERC721Holder": [
+        5978
+      ],
+      "EnumerableSet": [
+        7363
+      ],
+      "GenNFT": [
+        1518
+      ],
+      "GenToken": [
+        1533
+      ],
+      "IERC165": [
+        6536
+      ],
+      "IERC20": [
+        4377
+      ],
+      "IERC721": [
+        5537
+      ],
+      "IERC721Enumerable": [
+        5924
+      ],
+      "IERC721Metadata": [
+        5951
+      ],
+      "IERC721Receiver": [
+        5555
+      ],
+      "IEvolution": [
+        3469
+      ],
+      "Ownable": [
+        3798
+      ],
+      "OwnableToken": [
+        3449
+      ],
+      "Proxy": [
+        3583
+      ],
+      "SafeERC20": [
+        4600
+      ],
+      "SafeMath": [
+        6848
+      ],
+      "Strings": [
+        6500
+      ]
+    },
+    "id": 3584,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3451,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:7"
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/utils/structs/EnumerableSet.sol",
+        "file": "../oz/utils/structs/EnumerableSet.sol",
+        "id": 3452,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 7364,
+        "src": "57:47:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/access/Ownable.sol",
+        "file": "../oz/access/Ownable.sol",
+        "id": 3453,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 3799,
+        "src": "105:34:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC20/ERC20.sol",
+        "file": "../oz/token/ERC20/ERC20.sol",
+        "id": 3454,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 4300,
+        "src": "140:37:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC20/IERC20.sol",
+        "file": "../oz/token/ERC20/IERC20.sol",
+        "id": 3455,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 4378,
+        "src": "178:38:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC20/utils/SafeERC20.sol",
+        "file": "../oz/token/ERC20/utils/SafeERC20.sol",
+        "id": 3456,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 4601,
+        "src": "217:47:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC721/utils/ERC721Holder.sol",
+        "file": "../oz/token/ERC721/utils/ERC721Holder.sol",
+        "id": 3457,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 5979,
+        "src": "265:51:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC721/IERC721.sol",
+        "file": "../oz/token/ERC721/IERC721.sol",
+        "id": 3458,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 5538,
+        "src": "317:40:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/utils/math/SafeMath.sol",
+        "file": "../oz/utils/math/SafeMath.sol",
+        "id": 3459,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 6849,
+        "src": "358:39:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/contracts/GenToken.sol",
+        "file": "./GenToken.sol",
+        "id": 3460,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 1534,
+        "src": "398:24:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/contracts/GenNFT.sol",
+        "file": "./GenNFT.sol",
+        "id": 3461,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 1519,
+        "src": "423:22:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 3469,
+        "linearizedBaseContracts": [
+          3469
+        ],
+        "name": "IEvolution",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "d8cb4aa3",
+            "id": 3468,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "bonus",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3464,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3463,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3468,
+                  "src": "489:12:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3462,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "489:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "488:14:7"
+            },
+            "returnParameters": {
+              "id": 3467,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3466,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3468,
+                  "src": "526:4:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3465,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "526:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "525:6:7"
+            },
+            "scope": 3469,
+            "src": "474:58:7",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 3584,
+        "src": "447:87:7"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 3470,
+              "name": "Ownable",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 3798,
+              "src": "554:7:7"
+            },
+            "id": 3471,
+            "nodeType": "InheritanceSpecifier",
+            "src": "554:7:7"
+          },
+          {
+            "baseName": {
+              "id": 3472,
+              "name": "ERC721Holder",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 5978,
+              "src": "563:12:7"
+            },
+            "id": 3473,
+            "nodeType": "InheritanceSpecifier",
+            "src": "563:12:7"
+          }
+        ],
+        "contractDependencies": [
+          3798,
+          5555,
+          5978,
+          6297
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 3583,
+        "linearizedBaseContracts": [
+          3583,
+          5978,
+          5555,
+          3798,
+          6297
+        ],
+        "name": "Proxy",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 3477,
+            "libraryName": {
+              "id": 3474,
+              "name": "SafeERC20",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 4600,
+              "src": "588:9:7"
+            },
+            "nodeType": "UsingForDirective",
+            "src": "582:27:7",
+            "typeName": {
+              "id": 3476,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 3475,
+                "name": "IERC20",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 4377,
+                "src": "602:6:7"
+              },
+              "referencedDeclaration": 4377,
+              "src": "602:6:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IERC20_$4377",
+                "typeString": "contract IERC20"
+              }
+            }
+          },
+          {
+            "id": 3480,
+            "libraryName": {
+              "id": 3478,
+              "name": "SafeMath",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 6848,
+              "src": "620:8:7"
+            },
+            "nodeType": "UsingForDirective",
+            "src": "614:24:7",
+            "typeName": {
+              "id": 3479,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "633:4:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "functionSelector": "47ccca02",
+            "id": 3483,
+            "mutability": "mutable",
+            "name": "nft",
+            "nodeType": "VariableDeclaration",
+            "scope": 3583,
+            "src": "653:17:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_GenNFT_$1518",
+              "typeString": "contract GenNFT"
+            },
+            "typeName": {
+              "id": 3482,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 3481,
+                "name": "GenNFT",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 1518,
+                "src": "653:6:7"
+              },
+              "referencedDeclaration": 1518,
+              "src": "653:6:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_GenNFT_$1518",
+                "typeString": "contract GenNFT"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "f2ef62dd",
+            "id": 3486,
+            "mutability": "mutable",
+            "name": "evo",
+            "nodeType": "VariableDeclaration",
+            "scope": 3583,
+            "src": "676:21:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IEvolution_$3469",
+              "typeString": "contract IEvolution"
+            },
+            "typeName": {
+              "id": 3485,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 3484,
+                "name": "IEvolution",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 3469,
+                "src": "676:10:7"
+              },
+              "referencedDeclaration": 3469,
+              "src": "676:10:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IEvolution_$3469",
+                "typeString": "contract IEvolution"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "cc4d0884",
+            "id": 3489,
+            "mutability": "mutable",
+            "name": "bonusPerBurnedNFT",
+            "nodeType": "VariableDeclaration",
+            "scope": 3583,
+            "src": "703:34:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3487,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "703:4:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "3530",
+              "id": 3488,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "735:2:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_50_by_1",
+                "typeString": "int_const 50"
+              },
+              "value": "50"
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3506,
+              "nodeType": "Block",
+              "src": "819:47:7",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 3500,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 3498,
+                      "name": "nft",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3483,
+                      "src": "829:3:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GenNFT_$1518",
+                        "typeString": "contract GenNFT"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 3499,
+                      "name": "_nft",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3492,
+                      "src": "835:4:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GenNFT_$1518",
+                        "typeString": "contract GenNFT"
+                      }
+                    },
+                    "src": "829:10:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GenNFT_$1518",
+                      "typeString": "contract GenNFT"
+                    }
+                  },
+                  "id": 3501,
+                  "nodeType": "ExpressionStatement",
+                  "src": "829:10:7"
+                },
+                {
+                  "expression": {
+                    "id": 3504,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 3502,
+                      "name": "evo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3486,
+                      "src": "849:3:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IEvolution_$3469",
+                        "typeString": "contract IEvolution"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 3503,
+                      "name": "_evo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3495,
+                      "src": "855:4:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IEvolution_$3469",
+                        "typeString": "contract IEvolution"
+                      }
+                    },
+                    "src": "849:10:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IEvolution_$3469",
+                      "typeString": "contract IEvolution"
+                    }
+                  },
+                  "id": 3505,
+                  "nodeType": "ExpressionStatement",
+                  "src": "849:10:7"
+                }
+              ]
+            },
+            "id": 3507,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3496,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3492,
+                  "mutability": "mutable",
+                  "name": "_nft",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3507,
+                  "src": "769:11:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_GenNFT_$1518",
+                    "typeString": "contract GenNFT"
+                  },
+                  "typeName": {
+                    "id": 3491,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 3490,
+                      "name": "GenNFT",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1518,
+                      "src": "769:6:7"
+                    },
+                    "referencedDeclaration": 1518,
+                    "src": "769:6:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GenNFT_$1518",
+                      "typeString": "contract GenNFT"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3495,
+                  "mutability": "mutable",
+                  "name": "_evo",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3507,
+                  "src": "790:15:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IEvolution_$3469",
+                    "typeString": "contract IEvolution"
+                  },
+                  "typeName": {
+                    "id": 3494,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 3493,
+                      "name": "IEvolution",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 3469,
+                      "src": "790:10:7"
+                    },
+                    "referencedDeclaration": 3469,
+                    "src": "790:10:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IEvolution_$3469",
+                      "typeString": "contract IEvolution"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "759:52:7"
+            },
+            "returnParameters": {
+              "id": 3497,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "819:0:7"
+            },
+            "scope": 3583,
+            "src": "748:118:7",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3519,
+              "nodeType": "Block",
+              "src": "932:39:7",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 3516,
+                        "name": "user",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3509,
+                        "src": "959:4:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "id": 3514,
+                        "name": "evo",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3486,
+                        "src": "949:3:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IEvolution_$3469",
+                          "typeString": "contract IEvolution"
+                        }
+                      },
+                      "id": 3515,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "bonus",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3468,
+                      "src": "949:9:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
+                        "typeString": "function (address) view external returns (uint256)"
+                      }
+                    },
+                    "id": 3517,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "949:15:7",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 3513,
+                  "id": 3518,
+                  "nodeType": "Return",
+                  "src": "942:22:7"
+                }
+              ]
+            },
+            "functionSelector": "d8cb4aa3",
+            "id": 3520,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "bonus",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3510,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3509,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3520,
+                  "src": "891:12:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3508,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "891:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "890:14:7"
+            },
+            "returnParameters": {
+              "id": 3513,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3512,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3520,
+                  "src": "926:4:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3511,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "926:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "925:6:7"
+            },
+            "scope": 3583,
+            "src": "876:95:7",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3535,
+              "nodeType": "Block",
+              "src": "1054:84:7",
+              "statements": [
+                {
+                  "expression": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 3533,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "expression": {
+                        "arguments": [
+                          {
+                            "id": 3529,
+                            "name": "nftId",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 3522,
+                            "src": "1092:5:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "id": 3527,
+                            "name": "nft",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 3483,
+                            "src": "1071:3:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_GenNFT_$1518",
+                              "typeString": "contract GenNFT"
+                            }
+                          },
+                          "id": 3528,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "getTypeByTokenId",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 1422,
+                          "src": "1071:20:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_struct$_Type_$1172_memory_ptr_$",
+                            "typeString": "function (uint256) view external returns (struct GenNFT.Type memory)"
+                          }
+                        },
+                        "id": 3530,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1071:27:7",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Type_$1172_memory_ptr",
+                          "typeString": "struct GenNFT.Type memory"
+                        }
+                      },
+                      "id": 3531,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "bonus",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1169,
+                      "src": "1071:33:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "%",
+                    "rightExpression": {
+                      "hexValue": "31303030303030",
+                      "id": 3532,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1107:7:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1000000_by_1",
+                        "typeString": "int_const 1000000"
+                      },
+                      "value": "1000000"
+                    },
+                    "src": "1071:43:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 3526,
+                  "id": 3534,
+                  "nodeType": "Return",
+                  "src": "1064:50:7"
+                }
+              ]
+            },
+            "functionSelector": "6a639931",
+            "id": 3536,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getNFTPowerBonusBlocks",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3523,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3522,
+                  "mutability": "mutable",
+                  "name": "nftId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3536,
+                  "src": "1013:10:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3521,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1013:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1012:12:7"
+            },
+            "returnParameters": {
+              "id": 3526,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3525,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3536,
+                  "src": "1048:4:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3524,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1048:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1047:6:7"
+            },
+            "scope": 3583,
+            "src": "981:157:7",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 3543,
+              "nodeType": "Block",
+              "src": "1205:41:7",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 3541,
+                    "name": "bonusPerBurnedNFT",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3489,
+                    "src": "1222:17:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 3540,
+                  "id": 3542,
+                  "nodeType": "Return",
+                  "src": "1215:24:7"
+                }
+              ]
+            },
+            "functionSelector": "72c1bc19",
+            "id": 3544,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getNFTPowerBonus",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3537,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1173:2:7"
+            },
+            "returnParameters": {
+              "id": 3540,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3539,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3544,
+                  "src": "1199:4:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3538,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1199:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1198:6:7"
+            },
+            "scope": 3583,
+            "src": "1148:98:7",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 3556,
+              "nodeType": "Block",
+              "src": "1305:27:7",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 3554,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 3552,
+                      "name": "nft",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3483,
+                      "src": "1315:3:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GenNFT_$1518",
+                        "typeString": "contract GenNFT"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 3553,
+                      "name": "_nft",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3547,
+                      "src": "1321:4:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GenNFT_$1518",
+                        "typeString": "contract GenNFT"
+                      }
+                    },
+                    "src": "1315:10:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GenNFT_$1518",
+                      "typeString": "contract GenNFT"
+                    }
+                  },
+                  "id": 3555,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1315:10:7"
+                }
+              ]
+            },
+            "functionSelector": "5be68e93",
+            "id": 3557,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 3550,
+                "modifierName": {
+                  "id": 3549,
+                  "name": "onlyOwner",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 3747,
+                  "src": "1295:9:7"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1295:9:7"
+              }
+            ],
+            "name": "updateNFT",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3548,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3547,
+                  "mutability": "mutable",
+                  "name": "_nft",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3557,
+                  "src": "1275:11:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_GenNFT_$1518",
+                    "typeString": "contract GenNFT"
+                  },
+                  "typeName": {
+                    "id": 3546,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 3545,
+                      "name": "GenNFT",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1518,
+                      "src": "1275:6:7"
+                    },
+                    "referencedDeclaration": 1518,
+                    "src": "1275:6:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GenNFT_$1518",
+                      "typeString": "contract GenNFT"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1274:13:7"
+            },
+            "returnParameters": {
+              "id": 3551,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1305:0:7"
+            },
+            "scope": 3583,
+            "src": "1256:76:7",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3569,
+              "nodeType": "Block",
+              "src": "1395:27:7",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 3567,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 3565,
+                      "name": "evo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3486,
+                      "src": "1405:3:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IEvolution_$3469",
+                        "typeString": "contract IEvolution"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 3566,
+                      "name": "_evo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3560,
+                      "src": "1411:4:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IEvolution_$3469",
+                        "typeString": "contract IEvolution"
+                      }
+                    },
+                    "src": "1405:10:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IEvolution_$3469",
+                      "typeString": "contract IEvolution"
+                    }
+                  },
+                  "id": 3568,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1405:10:7"
+                }
+              ]
+            },
+            "functionSelector": "56e585f3",
+            "id": 3570,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 3563,
+                "modifierName": {
+                  "id": 3562,
+                  "name": "onlyOwner",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 3747,
+                  "src": "1385:9:7"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1385:9:7"
+              }
+            ],
+            "name": "updateEvo",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3561,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3560,
+                  "mutability": "mutable",
+                  "name": "_evo",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3570,
+                  "src": "1361:15:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IEvolution_$3469",
+                    "typeString": "contract IEvolution"
+                  },
+                  "typeName": {
+                    "id": 3559,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 3558,
+                      "name": "IEvolution",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 3469,
+                      "src": "1361:10:7"
+                    },
+                    "referencedDeclaration": 3469,
+                    "src": "1361:10:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IEvolution_$3469",
+                      "typeString": "contract IEvolution"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1360:17:7"
+            },
+            "returnParameters": {
+              "id": 3564,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1395:0:7"
+            },
+            "scope": 3583,
+            "src": "1342:80:7",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3581,
+              "nodeType": "Block",
+              "src": "1495:55:7",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 3579,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 3577,
+                      "name": "bonusPerBurnedNFT",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3489,
+                      "src": "1505:17:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 3578,
+                      "name": "_bonusPerBurnedNFT",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3572,
+                      "src": "1525:18:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1505:38:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 3580,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1505:38:7"
+                }
+              ]
+            },
+            "functionSelector": "9f8dbb7b",
+            "id": 3582,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 3575,
+                "modifierName": {
+                  "id": 3574,
+                  "name": "onlyOwner",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 3747,
+                  "src": "1485:9:7"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1485:9:7"
+              }
+            ],
+            "name": "updateBonus",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3573,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3572,
+                  "mutability": "mutable",
+                  "name": "_bonusPerBurnedNFT",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3582,
+                  "src": "1453:23:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3571,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1453:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1452:25:7"
+            },
+            "returnParameters": {
+              "id": 3576,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1495:0:7"
+            },
+            "scope": 3583,
+            "src": "1432:118:7",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3584,
+        "src": "536:1016:7"
+      }
+    ],
+    "src": "33:1519:7"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/contracts/Proxy.sol",
+    "exportedSymbols": {
+      "Address": [
+        6274
+      ],
+      "Context": [
+        6297
+      ],
+      "ERC165": [
+        6524
+      ],
+      "ERC20": [
+        4299
+      ],
+      "ERC721": [
+        5421
+      ],
+      "ERC721Enumerable": [
+        5893
+      ],
+      "ERC721Holder": [
+        5978
+      ],
+      "EnumerableSet": [
+        7363
+      ],
+      "GenNFT": [
+        1518
+      ],
+      "GenToken": [
+        1533
+      ],
+      "IERC165": [
+        6536
+      ],
+      "IERC20": [
+        4377
+      ],
+      "IERC721": [
+        5537
+      ],
+      "IERC721Enumerable": [
+        5924
+      ],
+      "IERC721Metadata": [
+        5951
+      ],
+      "IERC721Receiver": [
+        5555
+      ],
+      "IEvolution": [
+        3469
+      ],
+      "Ownable": [
+        3798
+      ],
+      "OwnableToken": [
+        3449
+      ],
+      "Proxy": [
+        3583
+      ],
+      "SafeERC20": [
+        4600
+      ],
+      "SafeMath": [
+        6848
+      ],
+      "Strings": [
+        6500
+      ]
+    },
+    "id": 3584,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3451,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:22:7"
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/utils/structs/EnumerableSet.sol",
+        "file": "../oz/utils/structs/EnumerableSet.sol",
+        "id": 3452,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 7364,
+        "src": "57:47:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/access/Ownable.sol",
+        "file": "../oz/access/Ownable.sol",
+        "id": 3453,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 3799,
+        "src": "105:34:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC20/ERC20.sol",
+        "file": "../oz/token/ERC20/ERC20.sol",
+        "id": 3454,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 4300,
+        "src": "140:37:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC20/IERC20.sol",
+        "file": "../oz/token/ERC20/IERC20.sol",
+        "id": 3455,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 4378,
+        "src": "178:38:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC20/utils/SafeERC20.sol",
+        "file": "../oz/token/ERC20/utils/SafeERC20.sol",
+        "id": 3456,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 4601,
+        "src": "217:47:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC721/utils/ERC721Holder.sol",
+        "file": "../oz/token/ERC721/utils/ERC721Holder.sol",
+        "id": 3457,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 5979,
+        "src": "265:51:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/token/ERC721/IERC721.sol",
+        "file": "../oz/token/ERC721/IERC721.sol",
+        "id": 3458,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 5538,
+        "src": "317:40:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/oz/utils/math/SafeMath.sol",
+        "file": "../oz/utils/math/SafeMath.sol",
+        "id": 3459,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 6849,
+        "src": "358:39:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/contracts/GenToken.sol",
+        "file": "./GenToken.sol",
+        "id": 3460,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 1534,
+        "src": "398:24:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/alexei120991/Documents/Project/RUNNER/EVA/Test/contracts/GenNFT.sol",
+        "file": "./GenNFT.sol",
+        "id": 3461,
+        "nodeType": "ImportDirective",
+        "scope": 3584,
+        "sourceUnit": 1519,
+        "src": "423:22:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 3469,
+        "linearizedBaseContracts": [
+          3469
+        ],
+        "name": "IEvolution",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "d8cb4aa3",
+            "id": 3468,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "bonus",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3464,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3463,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3468,
+                  "src": "489:12:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3462,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "489:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "488:14:7"
+            },
+            "returnParameters": {
+              "id": 3467,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3466,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3468,
+                  "src": "526:4:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3465,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "526:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "525:6:7"
+            },
+            "scope": 3469,
+            "src": "474:58:7",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 3584,
+        "src": "447:87:7"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 3470,
+              "name": "Ownable",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 3798,
+              "src": "554:7:7"
+            },
+            "id": 3471,
+            "nodeType": "InheritanceSpecifier",
+            "src": "554:7:7"
+          },
+          {
+            "baseName": {
+              "id": 3472,
+              "name": "ERC721Holder",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 5978,
+              "src": "563:12:7"
+            },
+            "id": 3473,
+            "nodeType": "InheritanceSpecifier",
+            "src": "563:12:7"
+          }
+        ],
+        "contractDependencies": [
+          3798,
+          5555,
+          5978,
+          6297
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 3583,
+        "linearizedBaseContracts": [
+          3583,
+          5978,
+          5555,
+          3798,
+          6297
+        ],
+        "name": "Proxy",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 3477,
+            "libraryName": {
+              "id": 3474,
+              "name": "SafeERC20",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 4600,
+              "src": "588:9:7"
+            },
+            "nodeType": "UsingForDirective",
+            "src": "582:27:7",
+            "typeName": {
+              "id": 3476,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 3475,
+                "name": "IERC20",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 4377,
+                "src": "602:6:7"
+              },
+              "referencedDeclaration": 4377,
+              "src": "602:6:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IERC20_$4377",
+                "typeString": "contract IERC20"
+              }
+            }
+          },
+          {
+            "id": 3480,
+            "libraryName": {
+              "id": 3478,
+              "name": "SafeMath",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 6848,
+              "src": "620:8:7"
+            },
+            "nodeType": "UsingForDirective",
+            "src": "614:24:7",
+            "typeName": {
+              "id": 3479,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "633:4:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "functionSelector": "47ccca02",
+            "id": 3483,
+            "mutability": "mutable",
+            "name": "nft",
+            "nodeType": "VariableDeclaration",
+            "scope": 3583,
+            "src": "653:17:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_GenNFT_$1518",
+              "typeString": "contract GenNFT"
+            },
+            "typeName": {
+              "id": 3482,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 3481,
+                "name": "GenNFT",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 1518,
+                "src": "653:6:7"
+              },
+              "referencedDeclaration": 1518,
+              "src": "653:6:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_GenNFT_$1518",
+                "typeString": "contract GenNFT"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "f2ef62dd",
+            "id": 3486,
+            "mutability": "mutable",
+            "name": "evo",
+            "nodeType": "VariableDeclaration",
+            "scope": 3583,
+            "src": "676:21:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_IEvolution_$3469",
+              "typeString": "contract IEvolution"
+            },
+            "typeName": {
+              "id": 3485,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 3484,
+                "name": "IEvolution",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 3469,
+                "src": "676:10:7"
+              },
+              "referencedDeclaration": 3469,
+              "src": "676:10:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_IEvolution_$3469",
+                "typeString": "contract IEvolution"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "cc4d0884",
+            "id": 3489,
+            "mutability": "mutable",
+            "name": "bonusPerBurnedNFT",
+            "nodeType": "VariableDeclaration",
+            "scope": 3583,
+            "src": "703:34:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3487,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "703:4:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "hexValue": "3530",
+              "id": 3488,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "735:2:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_50_by_1",
+                "typeString": "int_const 50"
+              },
+              "value": "50"
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3506,
+              "nodeType": "Block",
+              "src": "819:47:7",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 3500,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 3498,
+                      "name": "nft",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3483,
+                      "src": "829:3:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GenNFT_$1518",
+                        "typeString": "contract GenNFT"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 3499,
+                      "name": "_nft",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3492,
+                      "src": "835:4:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GenNFT_$1518",
+                        "typeString": "contract GenNFT"
+                      }
+                    },
+                    "src": "829:10:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GenNFT_$1518",
+                      "typeString": "contract GenNFT"
+                    }
+                  },
+                  "id": 3501,
+                  "nodeType": "ExpressionStatement",
+                  "src": "829:10:7"
+                },
+                {
+                  "expression": {
+                    "id": 3504,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 3502,
+                      "name": "evo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3486,
+                      "src": "849:3:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IEvolution_$3469",
+                        "typeString": "contract IEvolution"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 3503,
+                      "name": "_evo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3495,
+                      "src": "855:4:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IEvolution_$3469",
+                        "typeString": "contract IEvolution"
+                      }
+                    },
+                    "src": "849:10:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IEvolution_$3469",
+                      "typeString": "contract IEvolution"
+                    }
+                  },
+                  "id": 3505,
+                  "nodeType": "ExpressionStatement",
+                  "src": "849:10:7"
+                }
+              ]
+            },
+            "id": 3507,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3496,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3492,
+                  "mutability": "mutable",
+                  "name": "_nft",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3507,
+                  "src": "769:11:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_GenNFT_$1518",
+                    "typeString": "contract GenNFT"
+                  },
+                  "typeName": {
+                    "id": 3491,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 3490,
+                      "name": "GenNFT",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1518,
+                      "src": "769:6:7"
+                    },
+                    "referencedDeclaration": 1518,
+                    "src": "769:6:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GenNFT_$1518",
+                      "typeString": "contract GenNFT"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3495,
+                  "mutability": "mutable",
+                  "name": "_evo",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3507,
+                  "src": "790:15:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IEvolution_$3469",
+                    "typeString": "contract IEvolution"
+                  },
+                  "typeName": {
+                    "id": 3494,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 3493,
+                      "name": "IEvolution",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 3469,
+                      "src": "790:10:7"
+                    },
+                    "referencedDeclaration": 3469,
+                    "src": "790:10:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IEvolution_$3469",
+                      "typeString": "contract IEvolution"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "759:52:7"
+            },
+            "returnParameters": {
+              "id": 3497,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "819:0:7"
+            },
+            "scope": 3583,
+            "src": "748:118:7",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3519,
+              "nodeType": "Block",
+              "src": "932:39:7",
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 3516,
+                        "name": "user",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3509,
+                        "src": "959:4:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "expression": {
+                        "id": 3514,
+                        "name": "evo",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 3486,
+                        "src": "949:3:7",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IEvolution_$3469",
+                          "typeString": "contract IEvolution"
+                        }
+                      },
+                      "id": 3515,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "bonus",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3468,
+                      "src": "949:9:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
+                        "typeString": "function (address) view external returns (uint256)"
+                      }
+                    },
+                    "id": 3517,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "949:15:7",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 3513,
+                  "id": 3518,
+                  "nodeType": "Return",
+                  "src": "942:22:7"
+                }
+              ]
+            },
+            "functionSelector": "d8cb4aa3",
+            "id": 3520,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "bonus",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3510,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3509,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3520,
+                  "src": "891:12:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3508,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "891:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "890:14:7"
+            },
+            "returnParameters": {
+              "id": 3513,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3512,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3520,
+                  "src": "926:4:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3511,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "926:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "925:6:7"
+            },
+            "scope": 3583,
+            "src": "876:95:7",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3535,
+              "nodeType": "Block",
+              "src": "1054:84:7",
+              "statements": [
+                {
+                  "expression": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 3533,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "expression": {
+                        "arguments": [
+                          {
+                            "id": 3529,
+                            "name": "nftId",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 3522,
+                            "src": "1092:5:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "id": 3527,
+                            "name": "nft",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 3483,
+                            "src": "1071:3:7",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_GenNFT_$1518",
+                              "typeString": "contract GenNFT"
+                            }
+                          },
+                          "id": 3528,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "getTypeByTokenId",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 1422,
+                          "src": "1071:20:7",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_struct$_Type_$1172_memory_ptr_$",
+                            "typeString": "function (uint256) view external returns (struct GenNFT.Type memory)"
+                          }
+                        },
+                        "id": 3530,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1071:27:7",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Type_$1172_memory_ptr",
+                          "typeString": "struct GenNFT.Type memory"
+                        }
+                      },
+                      "id": 3531,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "bonus",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 1169,
+                      "src": "1071:33:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "%",
+                    "rightExpression": {
+                      "hexValue": "31303030303030",
+                      "id": 3532,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "1107:7:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1000000_by_1",
+                        "typeString": "int_const 1000000"
+                      },
+                      "value": "1000000"
+                    },
+                    "src": "1071:43:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 3526,
+                  "id": 3534,
+                  "nodeType": "Return",
+                  "src": "1064:50:7"
+                }
+              ]
+            },
+            "functionSelector": "6a639931",
+            "id": 3536,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getNFTPowerBonusBlocks",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3523,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3522,
+                  "mutability": "mutable",
+                  "name": "nftId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3536,
+                  "src": "1013:10:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3521,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1013:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1012:12:7"
+            },
+            "returnParameters": {
+              "id": 3526,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3525,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3536,
+                  "src": "1048:4:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3524,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1048:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1047:6:7"
+            },
+            "scope": 3583,
+            "src": "981:157:7",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 3543,
+              "nodeType": "Block",
+              "src": "1205:41:7",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 3541,
+                    "name": "bonusPerBurnedNFT",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3489,
+                    "src": "1222:17:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 3540,
+                  "id": 3542,
+                  "nodeType": "Return",
+                  "src": "1215:24:7"
+                }
+              ]
+            },
+            "functionSelector": "72c1bc19",
+            "id": 3544,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getNFTPowerBonus",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3537,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1173:2:7"
+            },
+            "returnParameters": {
+              "id": 3540,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3539,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3544,
+                  "src": "1199:4:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3538,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1199:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1198:6:7"
+            },
+            "scope": 3583,
+            "src": "1148:98:7",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 3556,
+              "nodeType": "Block",
+              "src": "1305:27:7",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 3554,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 3552,
+                      "name": "nft",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3483,
+                      "src": "1315:3:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GenNFT_$1518",
+                        "typeString": "contract GenNFT"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 3553,
+                      "name": "_nft",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3547,
+                      "src": "1321:4:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_GenNFT_$1518",
+                        "typeString": "contract GenNFT"
+                      }
+                    },
+                    "src": "1315:10:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GenNFT_$1518",
+                      "typeString": "contract GenNFT"
+                    }
+                  },
+                  "id": 3555,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1315:10:7"
+                }
+              ]
+            },
+            "functionSelector": "5be68e93",
+            "id": 3557,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 3550,
+                "modifierName": {
+                  "id": 3549,
+                  "name": "onlyOwner",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 3747,
+                  "src": "1295:9:7"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1295:9:7"
+              }
+            ],
+            "name": "updateNFT",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3548,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3547,
+                  "mutability": "mutable",
+                  "name": "_nft",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3557,
+                  "src": "1275:11:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_GenNFT_$1518",
+                    "typeString": "contract GenNFT"
+                  },
+                  "typeName": {
+                    "id": 3546,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 3545,
+                      "name": "GenNFT",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1518,
+                      "src": "1275:6:7"
+                    },
+                    "referencedDeclaration": 1518,
+                    "src": "1275:6:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GenNFT_$1518",
+                      "typeString": "contract GenNFT"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1274:13:7"
+            },
+            "returnParameters": {
+              "id": 3551,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1305:0:7"
+            },
+            "scope": 3583,
+            "src": "1256:76:7",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3569,
+              "nodeType": "Block",
+              "src": "1395:27:7",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 3567,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 3565,
+                      "name": "evo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3486,
+                      "src": "1405:3:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IEvolution_$3469",
+                        "typeString": "contract IEvolution"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 3566,
+                      "name": "_evo",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3560,
+                      "src": "1411:4:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IEvolution_$3469",
+                        "typeString": "contract IEvolution"
+                      }
+                    },
+                    "src": "1405:10:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IEvolution_$3469",
+                      "typeString": "contract IEvolution"
+                    }
+                  },
+                  "id": 3568,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1405:10:7"
+                }
+              ]
+            },
+            "functionSelector": "56e585f3",
+            "id": 3570,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 3563,
+                "modifierName": {
+                  "id": 3562,
+                  "name": "onlyOwner",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 3747,
+                  "src": "1385:9:7"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1385:9:7"
+              }
+            ],
+            "name": "updateEvo",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3561,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3560,
+                  "mutability": "mutable",
+                  "name": "_evo",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3570,
+                  "src": "1361:15:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IEvolution_$3469",
+                    "typeString": "contract IEvolution"
+                  },
+                  "typeName": {
+                    "id": 3559,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 3558,
+                      "name": "IEvolution",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 3469,
+                      "src": "1361:10:7"
+                    },
+                    "referencedDeclaration": 3469,
+                    "src": "1361:10:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IEvolution_$3469",
+                      "typeString": "contract IEvolution"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1360:17:7"
+            },
+            "returnParameters": {
+              "id": 3564,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1395:0:7"
+            },
+            "scope": 3583,
+            "src": "1342:80:7",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 3581,
+              "nodeType": "Block",
+              "src": "1495:55:7",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 3579,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 3577,
+                      "name": "bonusPerBurnedNFT",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3489,
+                      "src": "1505:17:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 3578,
+                      "name": "_bonusPerBurnedNFT",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3572,
+                      "src": "1525:18:7",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1505:38:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 3580,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1505:38:7"
+                }
+              ]
+            },
+            "functionSelector": "9f8dbb7b",
+            "id": 3582,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [
+              {
+                "id": 3575,
+                "modifierName": {
+                  "id": 3574,
+                  "name": "onlyOwner",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 3747,
+                  "src": "1485:9:7"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1485:9:7"
+              }
+            ],
+            "name": "updateBonus",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3573,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3572,
+                  "mutability": "mutable",
+                  "name": "_bonusPerBurnedNFT",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3582,
+                  "src": "1453:23:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3571,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1453:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1452:25:7"
+            },
+            "returnParameters": {
+              "id": 3576,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1495:0:7"
+            },
+            "scope": 3583,
+            "src": "1432:118:7",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3584,
+        "src": "536:1016:7"
+      }
+    ],
+    "src": "33:1519:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.0+commit.c7dfd78e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-07-08T12:53:23.059Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
