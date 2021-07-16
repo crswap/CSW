@@ -215,9 +215,11 @@ contract MasterChef is Ownable {
         UserInfo storage user = userInfo[_pid][msg.sender];
         _updatePool(_pid);
         _keepPendingShAndShares(_pid, msg.sender);
-
+        uint balance = pool.lpToken.balanceOf(address(this));
+        
         if(_amount > 0) {
             pool.lpToken.safeTransferFrom(address(msg.sender), address(this), _amount);
+            
 
             if(pool.depositFeeBP > 0){
                 uint depositFee = _amount * pool.depositFeeBP / 10000;
@@ -227,8 +229,10 @@ contract MasterChef is Ownable {
                 _amount -= depositFee;
             }
 
-            user.amount += _amount;
-            pool.amount += _amount;
+            uint amount = pool.lpToken.balanceOf(address(this)) - balance;
+            
+            user.amount += amount;
+            pool.amount += amount;
         }
 
         user.rewardDebt = user.amount * pool.accShPerPower / 1e12;
