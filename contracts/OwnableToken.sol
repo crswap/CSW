@@ -2,8 +2,8 @@
 pragma solidity >=0.6.12;
 pragma experimental ABIEncoderV2;
 
-import "../oz/access/Ownable.sol";
-import "../oz/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract OwnableToken is ERC20, Ownable  {
 

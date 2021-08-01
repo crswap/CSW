@@ -2,19 +2,19 @@
 
 pragma solidity ^0.8.0;
 
-import "../oz/utils/structs/EnumerableSet.sol";
-import "../oz/access/Ownable.sol";
-import "../oz/token/ERC20/ERC20.sol";
-import "../oz/token/ERC20/IERC20.sol";
-import "../oz/token/ERC20/utils/SafeERC20.sol";
-import "../oz/utils/math/Math.sol";
+import "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import "@openzeppelin/contracts/utils/math/Math.sol";
 
-import "./SharesToken.sol";
+import "./CSWToken.sol";
 
 
 interface IShares {
     function sendTo(address to, uint amount) external;
-    function addMoney(uint amount) external;
+    function updatePrice() external;
 }
 
 contract MasterChef is Ownable {
@@ -43,7 +43,7 @@ contract MasterChef is Ownable {
         uint accSharesPerPower;   // Accumulated Shs per share, times 1e12. See below.
     }
 
-    SharesToken public sh;
+    CSWToken public sh;
     IShares public shares;
     // Dev address.
     address public devaddr;
@@ -52,6 +52,7 @@ contract MasterChef is Ownable {
 
     // Deposit Fee address
     address public feeAddress;
+    address public sharesAddress;
 
     // Info of each pool.
     PoolInfo[] public poolInfo;
@@ -78,10 +79,11 @@ contract MasterChef is Ownable {
     event EmergencyWithdraw(address indexed user, uint indexed pid, uint256 amount);
 
     constructor (
-        SharesToken _sh,
+        CSWToken _sh,
         IShares _shares,
         address _devaddr,
         address _feeAddress,
+        address _sharesAddress,
         uint _startBlock,
         uint _shAllocPoint
     ) {
@@ -92,6 +94,7 @@ contract MasterChef is Ownable {
         shares = _shares;
         devaddr = _devaddr;
         feeAddress = _feeAddress;
+        sharesAddress = _sharesAddress;
         startBlock = _startBlock;
 
         totalAllocPoint = _shAllocPoint;
@@ -114,7 +117,7 @@ contract MasterChef is Ownable {
     // Add a new lp to the pool. Can only be called by the owner.
     // XXX DO NOT add the same LP token more than once. Rewards will be messed up if you do.
     function add(uint _allocPoint, IERC20 _lpToken, uint16 _depositFeeBP, bool _withUpdate) public onlyOwner {
-        require(_depositFeeBP <= 10000, "add: invalid deposit fee basis points");
+        require(_depositFeeBP <= 500, "add: invalid deposit fee basis points");
         if (_withUpdate) {
             _massUpdatePools();
         }
@@ -135,7 +138,7 @@ contract MasterChef is Ownable {
 
     // Update the given pool's SH allocation point and deposit fee. Can only be called by the owner.
     function set(uint _pid, uint _allocPoint, uint16 _depositFeeBP, bool _withUpdate) public onlyOwner {
-        require(_depositFeeBP <= 10000, "set: invalid deposit fee basis points");
+        require(_depositFeeBP <= 500, "set: invalid deposit fee basis points");
         if (_withUpdate) {
             _massUpdatePools();
         }
@@ -164,7 +167,7 @@ contract MasterChef is Ownable {
     // View function to see pending SHs on frontend.
     function pendingSh(uint _pid, address _user) external view returns (uint) {
         UserInfo storage user = userInfo[_pid][_user];
-        return user.rewardKept + _pendingSh(_pid, _user);
+        return (user.rewardKept + _pendingSh(_pid, _user)) * (100 + aprMultiplier(_pid, _user)) / 100;
     }
 
     // View function to see pending SHs on frontend.
@@ -201,9 +204,9 @@ contract MasterChef is Ownable {
         pool.accShPerPower += shReward * 1e12 / pool.amount;
         pool.lastRewardBlock = block.number;
 
-        uint sharesMultiplier = (block.number - pool.lastSharesRewardBlock) / (28800 * 2);
+        uint sharesMultiplier = (block.number - pool.lastSharesRewardBlock) / 74000;
         if (sharesMultiplier > 0) {
-            uint sharesReward = sharesMultiplier / 3;
+            uint sharesReward = 1e18 * sharesMultiplier / 3;
             pool.accSharesPerPower += sharesReward * 1e12 / pool.amount;
             pool.lastSharesRewardBlock = block.number;
         }
@@ -224,8 +227,8 @@ contract MasterChef is Ownable {
             if(pool.depositFeeBP > 0){
                 uint depositFee = _amount * pool.depositFeeBP / 10000;
                 pool.lpToken.safeTransfer(feeAddress, depositFee * 3 / 5);
-                shares.addMoney(depositFee * 2 / 5);
-
+                pool.lpToken.safeTransfer(sharesAddress, depositFee * 2 / 5);
+                shares.updatePrice();
                 _amount -= depositFee;
             }
 
@@ -326,6 +329,16 @@ contract MasterChef is Ownable {
             referrerReward[ref] += reward;
         }
     }
+    
+    function aprMultiplier(uint _pid, address sender) public view returns (uint) {
+        UserInfo storage user = userInfo[_pid][sender];
+        uint multiplier = (block.number - Math.max(lastTokenWithdrawBlock[sender], user.lastClaimedBlock)) * 10 / 28800; //10% per 24 hours
+        if (multiplier > 50) {
+            multiplier = 50;
+        }
+        
+        return multiplier;
+    }
 
     function claim(uint _pid) external {
         PoolInfo storage pool = poolInfo[_pid];
@@ -340,10 +353,8 @@ contract MasterChef is Ownable {
         _safeShTransfer(msg.sender, pending);
         _rewardReferrers(pending);
 
-        uint multiplier = (block.number - Math.max(lastTokenWithdrawBlock[msg.sender], user.lastClaimedBlock)) * 10 / 288; //10% per 24 hours
-        if (multiplier > 50) {
-            multiplier = 50;
-        }
+        uint multiplier = aprMultiplier(_pid, msg.sender);
+        
         if (multiplier > 0) {
             sh.mint(msg.sender, pending * multiplier / 100);
         }
@@ -367,10 +378,8 @@ contract MasterChef is Ownable {
 
         _rewardReferrers(pending);
 
-        uint multiplier = (block.number - Math.max(lastTokenWithdrawBlock[msg.sender], user.lastClaimedBlock)) * 10 / 288; //10% per 24 hours
-        if (multiplier > 50) {
-            multiplier = 50;
-        }
+        uint multiplier = aprMultiplier(_pid, msg.sender);
+        
         if (multiplier > 0) {
             sh.mint(address(this), pending * multiplier / 100);
         }
@@ -394,7 +403,7 @@ contract MasterChef is Ownable {
     }
 
 
-    function claimShares(uint _pid) internal {
+    function claimShares(uint _pid) external {
         PoolInfo storage pool = poolInfo[_pid];
         UserInfo storage user = userInfo[_pid][msg.sender];
 
@@ -442,7 +451,7 @@ contract MasterChef is Ownable {
         }
 
         if (block.number > pool.lastRewardBlock && pool.amount != 0) {
-            uint blockAmount = (block.number - pool.lastSharesRewardBlock) / (28800 * 2);
+            uint blockAmount = (block.number - pool.lastSharesRewardBlock) / 74000;
             uint sharesReward = blockAmount * 1e18 / 3;
             accSharesPerPower += sharesReward * 1e12 / pool.amount;
         }

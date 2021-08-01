@@ -2,11 +2,11 @@
 
 pragma solidity ^0.8.0;
 
-import "../oz/utils/structs/EnumerableSet.sol";
-import "../oz/access/Ownable.sol";
-import "../oz/token/ERC20/ERC20.sol";
-import "../oz/token/ERC20/IERC20.sol";
-import "../oz/token/ERC20/utils/SafeERC20.sol";
+import "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
 contract Shares is Ownable {
     using SafeERC20 for IERC20;
@@ -14,8 +14,8 @@ contract Shares is Ownable {
     IERC20 public token;
     uint public percent = 5;
 
-    uint startBlock;
-    uint circleTime = 57600;
+    uint public startBlock;
+    uint public circleTime = 74000;
 
     mapping (uint => uint) public sharesPrice;
 
@@ -27,14 +27,28 @@ contract Shares is Ownable {
     function currentCircle() public view returns (uint) {
         return (block.number - startBlock) / circleTime;
     }
-
+    
+    function blocksLeft() public view returns (uint) {
+        return circleTime - ((block.number - startBlock) % circleTime);
+    }
+    
+    
+    function currentPrice() public view returns (uint) {
+        uint current = currentCircle();
+        if (sharesPrice[current] == 0) {
+            return token.balanceOf(address(this)) * percent / 100;
+        } else {
+            return sharesPrice[current];
+        }
+    }
+    
     function sendTo(address to, uint amount) external onlyTrusted {
+        updatePrice();
+        
         token.safeTransfer(to, sharesPrice[currentCircle()] * amount / 1e18);
     }
 
-    function addMoney(uint amount) external onlyTrusted {
-        token.safeTransferFrom(address(msg.sender), address(this), amount);
-
+    function updatePrice() public onlyTrusted {
         uint current = currentCircle();
         if (sharesPrice[current] == 0) {
             sharesPrice[current] = token.balanceOf(address(this)) * percent / 100;
@@ -50,6 +64,11 @@ contract Shares is Ownable {
     function setPercent(uint _percent) external onlyOwner {
         percent = _percent;
     }
+    
+    function withdraw() public onlyOwner {
+        token.safeTransfer(msg.sender, token.balanceOf(address(this)));
+    }
+    
 
     mapping(address=>bool) private _isTrusted;
     modifier onlyTrusted {
