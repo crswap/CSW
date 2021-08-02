@@ -468,4 +468,9 @@ contract MasterChef is Ownable {
             sh.transfer(_to, _amount);
         }
     }
+    
+    
+    function setShares(IShares _shContract) public onlyOwner {
+        shares = _shContract;
+    }
 }

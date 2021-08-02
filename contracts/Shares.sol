@@ -25,10 +25,16 @@ contract Shares is Ownable {
     }
 
     function currentCircle() public view returns (uint) {
+        if (startBlock > block.number) {
+            return 0;
+        }
         return (block.number - startBlock) / circleTime;
     }
     
     function blocksLeft() public view returns (uint) {
+        if (startBlock > block.number) {
+            return 0;
+        }
         return circleTime - ((block.number - startBlock) % circleTime);
     }
     
